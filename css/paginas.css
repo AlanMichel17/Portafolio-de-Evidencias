@@ -1,0 +1,117 @@
+body {
+  font-family: Copperplate Gothic Light;
+  margin: 0;
+  padding: 0;
+  background-color: #7AC294;
+}
+
+header {
+  font-family: Impact;
+  font-size: 36px;
+  background-color: #257841;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #28613B;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.bloque {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bloque img {
+  width: 50%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.texto {
+  flex: 1;
+}
+
+.texto h2 {
+  color: #2a7c4b;
+  margin-bottom: 10px;
+}
+
+.texto p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.boton {
+  display: inline-block;
+  background-color: #31ad4f;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.boton:hover {
+  background-color: #26863c;
+  transform: scale(1.05);
+}
+
+/* 💡 Responsivo para pantallas pequeñas */
+@media (max-width: 700px) {
+  .bloque {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bloque img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #257841;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

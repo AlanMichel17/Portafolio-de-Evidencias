@@ -1,0 +1,63 @@
+body {
+  font-family: Copperplate Gothic Light;
+  margin: 0;
+  padding: 0;
+  background-color: #CFA3F7;
+}
+
+header {
+  font-family: Franklin Gothic Demi Cond;
+  font-size: 36px;
+  background-color: #B66AF7;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #9730F0;
+  margin: 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active, nav a:hover {
+  text-decoration: underline;
+}
+main {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #B66AF7;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
